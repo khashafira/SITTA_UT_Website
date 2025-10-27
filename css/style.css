@@ -1,128 +1,135 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #003566, #0099cc);
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #003566, #0099cc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-header{
-  background: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  text-align: center;
-  padding: 15px;
+header {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
 }
 
-.login-container, .stok-sontainer, .tracking-container, .dashboard-container {
-  background: white;
-  color: black;
-  padding: 30px;
-  margin-top: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  width: 350px;
-  text-align: center;
+.login-container, .stok-container, .tracking-container, .dashboard-container {
+    background: white;
+    color: black;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    width: 350px;
+    text-align: center;
 }
 
 input, button {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
-button {
-  background-color: #0077b6;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
+button{
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-  color: #0077b6;
-  text-decoration: none;
+    background-color: #005b8a;
+}
+
+.link-container a {
+    color: #0077b6;
+    text-decoration: none;
 }
 
 .menu a {
-  background-color: #0077b6;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: block;
-  width: 220px;
-  transition: 0.3s;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    width: 220px;
+    transition: 0.3s;
 }
 
 .men a:hover {
-  background-color: #005b8a;
-  transform: scale(1.05);
+    background-color: #005b8a;
+    transform: scale(1.05);
 }
 
 table {
-  width: 90%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  background: white;
-  color: black;
-  border-radius: 10px;
-  overflow: hidden;
+    width: 90%;
+    margin:  20px auto;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-  background-color: #0077b6;
-  color: white;
+    background-color: #0077b6;
+    color: white;
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 .back-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: #005b8a;
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+    display: inline-block;
+    margin-top: 20px;
+    background: #005b8a;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
-  background: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100px;
-  text-align: center;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
 }
 
 .close {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
-  color: red;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
 }
 
 .book-img {
@@ -132,21 +139,22 @@ tr:hover {
 }
 
 @media (max-width: 600px) {
-  .login-container, .stok-sontainer, .tracking-container, .dashboard-container {
+  .login-container, .stok-container, .tracking-container, .dashboard-container {
     width: 90%;
     padding: 20px;
   }
 
-table {
-  font-size: 14px;
-}  
+  table {
+    font-size: 14px;
+  }
 
-.book-img{
-  width: 60px;
-}
+  .book-img {
+    width: 60px;
+  }
 }
 
-.stok-sontainer {
+/* === Modern Layout for Stock Page === */
+.stok-container {
   max-width: 900px;
   margin: 40px auto;
   background: #ffffff;
@@ -156,11 +164,12 @@ table {
   text-align: center;
 }
 
-.stok-sontainer h2{
+.stok-container h2 {
   color: #005b8a;
   margin-bottom: 20px;
 }
 
+/* Table Layout */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -177,7 +186,7 @@ th {
 }
 
 td {
-  background-color: #0077b6;
+  background: #f9f9f9;
   padding: 12px;
   text-align: center;
 }
@@ -186,6 +195,7 @@ tr:nth-child(even) td {
   background: #f1f1f1;
 }
 
+/* Button style */
 button.order-btn {
   background: #0096c7;
   color: #fff;
@@ -201,16 +211,18 @@ button.order-btn:hover {
   transform: scale(1.05);
 }
 
+/* Image style */
 td img {
   width: 70px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Responsive */
 @media (max-width: 700px) {
-  .stok-sontainer {
+  .stok-container {
     width: 95%;
-    padding: 20%;
+    padding: 20px;
   }
 
   th, td {
@@ -222,7 +234,7 @@ td img {
   }
 }
 
-/* === Material Stock Layout === */
+/* === Modern & Aligned Material Stock Layout === */
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to bottom, #0077b6, #0096c7);
@@ -251,16 +263,18 @@ header {
   text-align: center;
 }
 
+/* Heading */
 .stok-container h2 {
   color: #005b8a;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
+/* Table style */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 12px;
+  margin-top: 10px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -297,20 +311,23 @@ td img {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-button.order-btn, .button.delete-btn {
-  background:#0096c7;
+/* Buttons */
+button.order-btn, button.delete-btn {
+  background: #0096c7;
   color: #fff;
+  border: none;
   border-radius: 6px;
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-button.order-btn:hover, button:delete-btn:hover {
+button.order-btn:hover, button.delete-btn:hover {
   background-color: #005b8a;
   transform: scale(1.05);
 }
 
+/* Responsive */
 @media (max-width: 700px) {
   .stok-container {
     width: 95%;
@@ -327,34 +344,36 @@ button.order-btn:hover, button:delete-btn:hover {
   }
 }
 
-/* to make sure stok-container class is exist and centered */
+/* ensure stok-container class exists and is centered */
 .stok-container {
   max-width: 1000px;
-  width: 82%;
-  margin: 36 auto;
+  width: 92%;
+  margin: 36px auto;
   background: #fff;
   border-radius: 14px;
   padding: 26px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
+/* table */
 table {
   width: 100%;
   border-collapse: collapse;
 }
-
 thead { background: #0077b6; color: #fff; }
 th { padding: 14px; font-weight: 600; font-size: 13px; }
-td { padding: 14px; vertical-align: middle; border-bottom: 1px solid #eee;}
-.book-img { width: 72px; border-radius: 8px; object-fit: cover;}
+td { padding: 14px; vertical-align: middle; border-bottom: 1px solid #eee; }
+.book-img { width: 72px; border-radius: 8px; object-fit: cover; }
 
-button { cursor: pointer; padding: 8px 12 px; border-radius: 8px; border: none; background: #0096c7; color: #fff;}
-button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s;}
+/* buttons */
+button { cursor: pointer; padding: 8px 12px; border-radius: 8px; border: none; background: #0096c7; color: #fff; }
+button:hover { background: #0077b6; transform: translateY(-1px); transition: 0.15s; }
 
-@media (max-width: 700px) {
-  .stok-container {width: 96%; padding: 16px;}
-  th, td { padding: 10px; font-size: 13px;}
-  .book-img {width: 48px;}
+/* small-screen */
+@media (max-width:700px) {
+  .stok-container { width: 96%; padding: 16px; }
+  th, td { padding: 10px; font-size: 13px; }
+  .book-img { width: 48px; }
 }
 
 #billingSection {
@@ -365,17 +384,17 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-#billingSectio h3{
+#billingSection h3 {
   color: #0077b6;
   margin-bottom: 15px;
 }
 
 #billingSection table {
-  border: 100%;
+  width: 100%;
   border-collapse: collapse;
 }
 
-#billingSevtion th, #billingSection td {
+#billingSection th, #billingSection td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
@@ -386,7 +405,7 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
   color: #fff;
 }
 
-/* === Transaction History === */
+/* ===== Transaction History Page ===== */
 .transaction-container {
   background: white;
   color: black;
@@ -398,17 +417,17 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
   max-width: 800px;
 }
 
-.transaction-container h2{
+.transaction-container h2 {
   color: #0077b6;
   text-align: center;
 }
 
-/* === Invoice Pop Up === */
+/* ===== Invoice Popup ===== */
 .invoice-modal {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,7 +441,7 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
   border-radius: 12px;
   width: 300px;
   text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   animation: pop 0.3s ease;
 }
 
@@ -439,6 +458,7 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
   color: white;
   border: none;
   padding: 8px 20px;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -448,25 +468,25 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
 }
 
 @keyframes pop {
-  from { transform: scale(0.8); opacity: 0;}
-  to { transform: scale(1); opacity: 1;}
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-/* === Delivery Tracking === */
+/* ===== Tracking Section ===== */
 .tracking-container {
   background: white;
   color: black;
   padding: 30px;
   margin: 40px auto;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
   width: 90%;
   max-width: 600px;
   text-align: center;
 }
 
 .result-box {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .status-card {
@@ -475,7 +495,7 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
   border-radius: 10px;
   padding: 20px;
   text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   animation: fadeIn 0.4s ease;
 }
 
@@ -485,20 +505,25 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
 }
 
 .status {
+  color: green;
+  font-weight: bold;
+}
+
+.not-found {
   color: red;
   margin-top: 10px;
 }
 
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(10px);}
-  to {opacity: 1; transform: translateY();}
+  to {opacity: 1; transform: translateY(0);}
 }
 
 .tracking-list {
-  list-style: none;
+  list-style-type: none;
   padding-left: 0;
   margin-top: 10px;
-  border-top: 10px solid #ccc;
+  border-top: 1px solid #ccc;
   padding-top: 10px;
 }
 
@@ -515,8 +540,13 @@ button:hover {background: #0077b6; transform: translateY(-px); transition: 0.15s
 .status-card {
   background: #f8f9fa;
   border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   animation: fadeIn 0.3s ease;
-  text-align: center;
+  text-align: left;
+}
+
+
+.status-card {
+  text-align: left;
 }
