@@ -34,7 +34,7 @@ function renderTable() {
 
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td><img src="assets/${gambar}" alt="${nama}" class="book-img" onerror="this.src='assets/default_book.jpg'"></td>
+      <td><img src="assets/img/${gambar}" alt="${nama}" class="book-img" onerror="this.src='assets/img/default_book.jpg'"></td>
       <td>${kode}</td>
       <td style="text-align:left;">${nama}</td>
       <td>${stok}</td>
