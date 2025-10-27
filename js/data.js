@@ -46,31 +46,31 @@ const dataBahanAjar = [
     kode: "ASIP4301",
     nama: "Pengantar Ilmu Komunikasi",
     stok: 548,
-    gambar: "assets/img/pengantar_komunikasi.jpg"
+    gambar: "img/pengantar_komunikasi.jpg"
   },
   {
     kode: "EKMA4216",
     nama: "Manajemen Keuangan",
     stok: 392,
-    gambar: "assets/img/manajemen_keuangan.jpg"
+    gambar: "img/manajemen_keuangan.jpg"
   },
   {
     kode: "EKMA4310",
     nama: "Kepemimpinan",
     stok: 278,
-    gambar: "assets/img/kepemimpinan.jpg"
+    gambar: "img/kepemimpinan.jpg"
   },
   {
     kode: "BIOL4211",
     nama: "Mikrobiologi Dasar",
     stok: 165,
-    gambar: "assets/img/mikrobiologi.jpg"
+    gambar: "img/mikrobiologi.jpg"
   },
   {
     kode: "PAUD4401",
     nama: "Perkembangan Anak Usia Dini",
     stok: 204,
-    gambar: "assets/img/paud_perkembangan.jpeg"
+    gambar: "img/paud_perkembangan.jpeg"
   }
 ];
 
