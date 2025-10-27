@@ -558,3 +558,41 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
+.dashboard-container {
+  background: white;
+  color: black;
+  padding: 40px;
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.dashboard-container h2 {
+  color: #0077b6;
+  margin-bottom: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-btn {
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: #005f8c;
+  transform: scale(1.05);
+}
