@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Material Stock - SITTA</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/data.js"></script>
+  <script defer src="js/stok.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SITTA - Learning Material Stock</h1>
+    <h3>Universitas Terbuka</h3>
+  </header>
+
+  <main class="stok-container">
+    <h2>Material Stock</h2>
+
+    <section id="tableStok">
+      <table>
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Code</th>
+            <th>Material Name</th>
+            <th>Stock</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Form tambah khusus admin -->
+    <section id="sectionTambah" style="display: none; margin-top: 20px;">
+      <h3>Add New Material</h3>
+      <form id="formTambah">
+        <input type="text" id="kode" placeholder="Code" required />
+        <input type="text" id="nama" placeholder="Material Name" required />
+        <input type="number" id="stok" placeholder="Stock" required />
+        <input type="text" id="gambar" placeholder="Image filename (e.g. kepemimpinan.jpg)" />
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <!-- Section Billing untuk Mahasiswa -->
+<section id="billingSection" style="display:none; margin-top:40px;">
+  <h3>Transaction History</h3>
+  <table id="tableBilling">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Material</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+  </main>
+</body>
+</html>

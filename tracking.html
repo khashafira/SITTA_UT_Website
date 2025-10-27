@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Tracking - SITTA</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/data.js"></script>
+  <script defer src="js/tracking.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SITTA - Delivery Tracking</h1>
+    <h3>Universitas Terbuka</h3>
+  </header>
+
+  <main class="tracking-container">
+    <h2>Track Your Delivery</h2>
+
+    <form id="formTracking">
+      <input type="number" id="doNumber" placeholder="Enter DO Number" required />
+      <button type="submit">Check Status</button>
+    </form>
+
+    <div id="resultTracking" class="result-box"></div>
+
+    <a href="dashboard.html" class="back-btn">← Back to Dashboard</a>
+  </main>
+</body>
+</html>

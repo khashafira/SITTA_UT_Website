@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SITTA Universitas Terbuka</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/login.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo_UT.jpg" alt="Universitas Terbuka Logi" />
+        <h1>SITTA - Learning Material Ordering System</h1>
+        <h3>Universitas Terbuka</h3>
+    </header>
+
+    <main class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email here" required />
+
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter your password here" required />
+
+            <button type="submit">Login</button>
+
+            <div class="link-container">
+                <a href="#" id="forgotLink">Forgot Password?</a>
+                <a href="#" id="registerLink">Register</a>
+            </div>
+        </form>
+    </main>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <h3>Create New Account</h3>
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Register</button>
+        </div>
+    </div>
+
+    <!--- Forgot Password -->
+    <!-- Forgot Password Modal -->
+<div id="forgotModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeForgot">&times;</span>
+    <h3>Forgot Password</h3>
+    <p>Please contact admin@ut.ac.id to reset your password.</p>
+  </div>
+</div>
+</body>
+</html>
